@@ -1,12 +1,60 @@
+body {
+  font-family: "open sans";
+}
+
 h1 {
-  color: blue;
+  margin-bottom: 0.5em;
+  font-size: 3.5em;
+}
+
+p {
+  font-size: large;
+}
+
+.top-div {
+  margin-top: 5em;
+  background-color: #fee4ba;
+  margin-top: 0%;
+}
+
+.row-div {
+  padding: 4em 2em 2em 2em;
+}
+
+.first-button {
+  margin-right: 3em;
+}
+
+.button-text {
+  padding-left: 0.5em;
+  padding-right: 0.25em;
 }
 
 .profile-image {
   border-radius: 50%;
+  width: 90%;
+  max-height: 23em;
+  max-width: 23em;
+  margin-bottom: -12em;
+  margin-right: 100em;
 }
 
-.blue-circle-div {
-  background-color: #a7d4d2;
-  border-radius: 50%;
+.about-section {
+  padding: 7em 7em 7em 7em;
+  text-align: left;
+  margin-top: -5em;
+}
+
+.about-me-title {
+  padding: 1.5em 1em 0.5em 1.3em;
+  text-decoration: underline;
+}
+
+.about-me-text {
+  padding: 1em 2em 1em 2em;
+  text-align: justify;
+}
+
+.yellow-svg {
+  margin-top: -10em;
 }
