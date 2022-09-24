@@ -1,0 +1,12 @@
+h1 {
+  color: blue;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.blue-circle-div {
+  background-color: #a7d4d2;
+  border-radius: 50%;
+}
