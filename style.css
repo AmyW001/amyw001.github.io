@@ -44,12 +44,12 @@ p {
   padding: 10em 7em 2em 7em;
   text-align: left;
   margin-top: -5em;
+  margin-bottom: 3em;
 }
 
 .about-me-text {
   text-align: left;
   line-height: 2em;
-  padding-bottom: 3em;
 }
 
 h2 {
@@ -65,4 +65,40 @@ h2 {
 
 .book-club-div {
   margin-bottom: 4em;
+}
+
+.activities {
+}
+
+.alternate-words:before {
+  content: "reading.";
+  color: #ec9a29;
+  animation: topToBottom 5s infinite 2s;
+}
+
+@keyframes topToBottom {
+  0% {
+    content: "hiking.";
+    color: #d32920;
+  }
+  20% {
+    content: "hanging out with my dog.";
+    color: #ec8129;
+  }
+  40% {
+    content: "ice skating.";
+    color: #ab72fc;
+  }
+  60% {
+    content: "listening to good music.";
+    color: #2bb5e8;
+  }
+  80% {
+    content: "playing good music!";
+    color: #56a22a;
+  }
+  100% {
+    content: "reading.";
+    color: #ec9a29;
+  }
 }
