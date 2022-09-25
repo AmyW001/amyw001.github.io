@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="about-section">
+    <div class="about-section p-5">
       <p class="about-me-text">
         I’m transitioning into full-stack web development, having previously
         working as a self-employed musician and business owner. Recently, I
@@ -56,49 +56,86 @@
         collaborative work in development environment.
       </p>
       <span class="activities">
-      <p>
-        In my spare time I like
-        <span class="alternate-words"></span>
-      </p>
+        <p class="hobbies-text">
+          In my spare time I like
+          <span class="alternate-words"></span>
+        </p>
       </span>
-      </div>
+    </div>
 
-      <div class="purple-projects-div container-fluid p-4">
-        <h2>Projects</h2>
+    <div class="purple-projects-div container-fluid p-4">
+      <h2>Projects</h2>
+    </div>
+    <div class="row m-5">
+      <div class="col-sm-6 p-4 book-club-div">
+        <h4>Book Club</h4>
+        <p>
+          Using React I built a ‘book club’ website that enables users to create
+          an account and sign in, calling data stored in a SQL database using
+          MySQL and Express. The site connects to the Google Books API, and
+          enables users to type in keywords to search for books. The site then
+          displays information from the API call dynamically on the page.
+          Employed Bootstrap and plain CSS for styling.
+        </p>
       </div>
-      <div class="row m-5">
-        <div class="col-sm-6 p-4 book-club-div">
-          <h4>Book Club</h4>
-          <p>
-            Using React I built a ‘book club’ website that enables users to
-            create an account and sign in, calling data stored in a SQL database
-            using MySQL and Express. The site connects to the Google Books API,
-            and enables users to type in keywords to search for books. The site
-            then displays information from the API call dynamically on the page.
-            Employed Bootstrap and plain CSS for styling.
-          </p>
+      <div class="col-sm-6 p-4 video book-club-div">
+        <iframe
+          width="100%"
+          height="100%"
+          align-items="right"
+          src="https://www.youtube.com/embed/5n5v81TRoOk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="col-sm-6 p-4">
+        <h4>Pawkies</h4>
+        <p>
+          Worked on a group project, using React to build a platform for dog
+          walkers to add/find dog walks, and live chat with each other. My role
+          was to create a ‘User Profile’ component, which dynamically displays
+          user data called from an SQL database, based on the current URL. I
+          integrated the TalkJS chat API into the page, and created Express
+          routes from the database to generate chat users and enable the chat.
+          Worked with both Bootstrap and pure CSS to style various parts of the
+          website.
+        </p>
+      </div>
+      <div class="col-sm-6 p-4">
+        <iframe
+          width="100%"
+          height="100%"
+          align-items="right"
+          src="https://www.youtube.com/embed/5qvJ5SRRTq8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="purple-projects-div container-fluid p-4">
+      <h2>Photoshop</h2>
+    </div>
+    <p class="p-4 photoshop-para">
+      During the pandemic, I had time to get creative, and made a few composite
+      images, shown below:
+    </p>
+    <div class="container-fluid final-div">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="img-fluid m-1" max-width: 100% height: auto;
+          src="get-out-head.jpg" />
         </div>
-        <div class="col-sm-6 p-4 video book-club-div">
-          <iframe width="100%"
-            height="100%"
-            align-items="right" src="https://www.youtube.com/embed/5n5v81TRoOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-sm-4">
+          <img class="img-fluid m-1" max-width: 100% height: auto;
+          src="book-ladder.jpg" />
         </div>
-        <div class="col-6">
-<iframe width="100%"
-            height="100%"
-            align-items="right" src="https://www.youtube.com/embed/5qvJ5SRRTq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
-        <div class="col-6">
-          <h4>Pawkies</h4>
-          <p>
-            Worked on a group project, using React to build a platform for dog
-            walkers to add/find dog walks, and live chat with each other. My
-            role was to create a ‘User Profile’ component, which dynamically
-            displays user data called from an SQL database, based on the current
-            URL. I integrated the TalkJS chat API into the page, and created
-            Express routes from the database to generate chat users and enable
-            the chat. Worked with both Bootstrap and pure CSS to style various
-            parts of the website.
-          </p>
+        <div class="col-sm-4 m-1">
+          <img class="img-fluid" max-width: 100% height: auto; src="falling.jpg"
+          />
         </div>
       </div>
     </div>
