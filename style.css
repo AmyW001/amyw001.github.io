@@ -31,6 +31,10 @@ p {
   padding-right: 0.25em;
 }
 
+.image-div {
+  padding-right: 0%;
+}
+
 .profile-image {
   border-radius: 50%;
   width: 90%;
