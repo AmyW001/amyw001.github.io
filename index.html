@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c614aba3b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="topbar">
+            <a href="#" class="logo-container">
+                <img src="./images/mushroom.svg" alt="" class="links original">
+                <img src="./images/mushroom-red.svg" alt="" class="links overlay">
+            </a>
+        
+            <a href="https://github.com/AmyW001?tab=repositories" class="logo-container">
+                <img src="./images/github.svg" alt="" class="links original">
+                <img src="./images/github-red.svg" alt="" class="links overlay">
+            </a>
+        
+            <a href="https://www.linkedin.com/in/amy-welch/" class="logo-container">
+                <img src="./images/linkedin.svg" alt="" class="links original">
+                <img src="./images/linkedin-red.svg" alt="" class="links overlay">
+            </a>
+
+            <a href = "mailto: amzwelch@gmail.com" class="logo-container">
+                <img src="./images/email.svg" alt="" class="links original">
+                <img src="./images/email-red.svg" alt="" class="links overlay">
+            </a>
+
+        </div>
+        <div class="video-mobile hidden">
+            <video id="video-background" autoplay muted loop>
+                <source src="./video/woman-cloud-laptop.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="jumbo">
+            <div class="text-info">
+                <div>
+                    <h1>Hi there! I'm Amy, a full-stack web developer</h1>
+                    <p>Based in Manchester, I transitioned from self-employed musician to professional programmer.
+                    I have a passion for problem solving and love using my creativity and curiosity to better my code.</p>
+                    <div class="tech-stack">
+                        <div class="no-padding">
+                            <img src="./images/javascript.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/php.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/html.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/css.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/mysql.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/laravel.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/react.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/codeigniter.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video id="video-background" autoplay muted loop>
+                    <source src="./video/woman-cloud-laptop.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <section class="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                I made the decision to embark on a new career path and break into tech following several years working as a violinist. 
+                After a span of self-study, I enrolled in CodeOp's bootcamp and subsequently found a job as a full-stack developer.
+                Drawing upon the communication skills and adaptability I developed through prior, varied, team-oriented roles, I've
+                enjoyed working on various projects, constantly building on my PHP and Javascript knowledge.
+                <br>
+                <br>
+                In my current day-to-day, I translate Figma designs into responsive front-end code, and use a combination of PHP and MySQL to develop customized web applications with comprehensive CRUD functionalities. 
+                Although I enjoy working on the front-end, I've found that I love the challenge of back-end development, and I'm always looking to learn more.
+            </p>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="projects-container">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <div class="demo">
+                    <iframe
+                        src="https://www.youtube.com/embed/5n5v81TRoOk"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="text">
+                    <h4>Code Op Solo MVP - React</h4>
+                    <p>
+                        A book club application, running on React and SQL/Node JS/Express. Users can
+                        create an account and sign in to search for books. A connection to the Google Books API,
+                        finds the book information and displays it dynamically on the page.
+                        Bootstrap and plain CSS were employed for styling.
+                    </p>
+                    <a href="https://github.com/AmyW001/bookclub_mvp" class="button">
+                        <i class="fa-brands fa-github"></i> View code on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="demo hidden">
+                    <iframe
+                        src="https://www.youtube.com/embed/5qvJ5SRRTq8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="text">
+                    <h4>Code Op Group MVP - React</h4>
+                    <p>
+                        Worked on a group project, using React to build a platform for dog
+                        walkers to add/find dog walks, and live chat with each other. My
+                        role was to create a ‘User Profile’ component, which dynamically
+                        displays user data called from an SQL database, based on the current
+                        URL. I integrated the TalkJS chat API into the page, and created
+                        Express routes from the database to generate chat users and enable
+                        the chat. Worked with both Bootstrap and pure CSS to style various
+                        parts of the website.
+                    </p>
+                    <a href="https://github.com/AmyW001/pawkies" class="button">
+                        <i class="fa-brands fa-github"></i> View code on GitHub
+                    </a>
+                </div>
+                <div class="demo" id="fullscreen-demo">
+                    <iframe
+                        src="https://www.youtube.com/embed/5qvJ5SRRTq8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="view">
+                    <img src="./images/flyvaders-still.png" alt="">
+                </div>
+                <div class="text">
+                    <h4>Javascript Game</h4>
+                    <p>
+                        A space-invaders inspired game running on Javascript.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://github.com/AmyW001/fly-vaders" class="button">
+                            <i class="fa-brands fa-github"></i> View code on GitHub
+                        </a>
+                        <a href="https://amyw001.github.io/fly-vaders/" class="button">
+                            <i class="fa-regular fa-circle-play"></i> Play the game
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="./index.js"></script>
+<script src="./game.js"></script>
