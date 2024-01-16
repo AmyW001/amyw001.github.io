@@ -269,9 +269,15 @@ main {
         margin-bottom: 55px;
     }
 
-    .project .demo.hidden {
+    .project .demo.hidden,
+    .project .view.hidden {
         display: block;
     }
+
+    .project .hidden-mobile {
+        display: none;
+    }
+
     .project .demo#fullscreen-demo {
         display: none;
     }
