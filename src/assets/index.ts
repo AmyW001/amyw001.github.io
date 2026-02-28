@@ -1,6 +1,6 @@
-export { default as Avatar } from "./avatar.png";
-export { default as AvatarTwo } from "./avatar-2.png";
-export { default as AvatarThree } from "./avatar-3.png";
+export { default as Avatar } from "./avatar.avif";
+export { default as AvatarTwo } from "./avatar-2.avif";
+export { default as AvatarThree } from "./avatar-3.avif";
 export { default as Book } from "./book.svg";
 export { default as BookClub } from "./book-club.jpeg";
 export { default as Bouldering } from "./bouldering.png";
