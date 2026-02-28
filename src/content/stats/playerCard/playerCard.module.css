@@ -47,9 +47,13 @@
 .starContainer {
   display: flex;
   flex-direction: row;
-  width: 25px;
   justify-content: center;
   margin: 10px 0;
+}
+
+.star {
+  width: 26px;
+  height: auto;
 }
 
 @media (max-width: 1030px) {
