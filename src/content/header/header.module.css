@@ -24,12 +24,12 @@
 }
 
 .header::before {
-  background-image: url('../../assets/mountain-pixel-scene.png');
+  background-image: url('../../assets/mountain-pixel-scene.avif');
   opacity: 1;
 }
 
 .header::after {
-  background-image: url('../../assets/mountain-scene-night.png');
+  background-image: url('../../assets/mountain-scene-night.avif');
   opacity: 0;
 }
 
