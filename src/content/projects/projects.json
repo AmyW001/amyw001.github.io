@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "NextJS Project - Coming soon!",
+    "description": "A full-stack NextJs project featuring Prisma for database management.",
+    "image": "ComingSoon",
+    "imageAlt": "Project 1",
+    "tags": ["NextJS", "Prisma"],
+    "codeButtonLink": "https://github.com/AmyW001/laravel-job-board-project",
+    "demoButtonLink": ""
+  },
+  {
+    "id": "2",
+    "title": "Laravel Project - Jobs Board",
+    "description": "A full-stack CRUD application, enabling users to post, edit and view jobs, and filter by category. Running on Laravel and MySql with Tailwind for styling.",
+    "image": "CareerCache",
+    "imageAlt": "Project 1",
+    "tags": ["Laravel", "MySQL", "Tailwind"],
+    "codeButtonLink": "https://github.com/AmyW001/laravel-job-board-project",
+    "demoButtonLink": "https://www.youtube.com/watch?v=Ygd9uLnhXho"
+  },
+  {
+    "id": "3",
+    "title": "Laravel & React CRUD Project",
+    "description": "A basic admin panel that enables users to be created, deleted and edited. Utilising React on the front-end and Laravel on the back-end.",
+    "image": "LaravelReactCrud",
+    "imageAlt": "Project 2",
+    "tags": ["React", "Laravel"],
+    "codeButtonLink": "https://github.com/AmyW001/laravel-react-crud-project",
+    "demoButtonLink": ""
+  },
+  {
+    "id": "4",
+    "title": "Code Op Solo MVP - React",
+    "description": "A book club application, running on React and SQL/Node JS/Express. Featuring user management, the Google Books API and Bootstrap.",
+    "image": "BookClub",
+    "imageAlt": "Project 2",
+    "tags": ["React", "Express.js", "MySQL"],
+    "codeButtonLink": "https://github.com/AmyW001/bookclub_mvp",
+    "demoButtonLink": "https://www.youtube.com/watch?v=5n5v81TRoOk"
+  },
+  {
+    "id": "5",
+    "title": "Code Op Group MVP - React",
+    "description": "A group project, using React/Express.js/SQL to build a platform for dog walkers, with a live chat feature based on the TalkJS chat API.",
+    "image": "DogWalking",
+    "imageAlt": "Project 2",
+    "tags": ["React", "Express.js", "MySQL"],
+    "codeButtonLink": "https://github.com/AmyW001/pawkies",
+    "demoButtonLink": "https://www.youtube.com/watch?v=5qvJ5SRRTq8"
+  },
+  {
+    "id": "6",
+    "title": "Javascript Game",
+    "description": "A space-invaders inspired game running on Javascript.",
+    "image": "FlyVaders",
+    "imageAlt": "Project 6",
+    "tags": ["Javascript", "HTML", "CSS"],
+    "codeButtonLink": "https://github.com/AmyW001/fly-vaders",
+    "demoButtonLink": "https://amyw001.github.io/fly-vaders/"
+  }
+]

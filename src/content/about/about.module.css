@@ -1,0 +1,101 @@
+.about {
+  padding: 40px 250px 100px 250px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 40px;
+}
+
+.aboutContentsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.aboutText {
+  font-size: 26px;
+  padding: 25px;
+}
+
+.aboutRightContentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.aboutRightCardWrapper {
+  display: flex;
+  flex: 1;
+}
+
+.aboutRightCardWrapper > * {
+  flex: 1;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+
+  a {
+    font-size: 25px;
+    padding: 12px 20px;
+  }
+}
+
+.playerCardColumn {
+  display: none;
+}
+
+@media (max-width: 1520px) {
+  .about {
+    padding: 40px 130px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about {
+    padding: 40px 50px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .playerCardColumn {
+    display: flex;
+    min-width: 280px;
+  }
+
+  .aboutText {
+    font-size: 22px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutContentsContainer {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutText {
+    padding: 0;
+  }
+
+  .buttonRow {
+    gap: 10px;
+
+    a {
+      font-size: 18px;
+      padding: 6px 10px;
+    }
+  }
+}

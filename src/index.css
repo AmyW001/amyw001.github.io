@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Handjet:wght,ELSH@100..900,2&family=Press+Start+2P&family=VT323&display=swap');
+
+:root {
+  font-family: "VT323", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --colour-page-background: #2D1C00;
+  --colour-text: #412123;
+  --colour-section-background: #242424;
+  --colour-card-border: #412123;
+  --colour-card-background: #F1C28F;
+  --colour-card-text: #2D1C00;
+  --colour-accent-primary: #6B8E24;
+  --colour-text-light: #fff5eb;
+  --colour-tooltip-background: #1B1010;
+  --colour-tooltip-text: #F9E4C6;
+  --colour-toggle-top: #F1C28F;
+  --colour-toggle-base: #5a3a12;
+  --colour-button-border: #4A4A4A;
+  --colour-button-background-primary: #6B8E24;
+  --colour-button-background-primary-hover: #4E681B;
+  --colour-button-background-secondary: #8C4512;
+  --colour-button-background-secondary-hover: #6A330D;
+  --colour-button-background-tertiary: #5A1D0F;
+  --colour-button-background-tertiary-hover: #3F150A;
+  --colour-button-background-disabled: #4A4A4A;
+  --colour-button-border-disabled: #6A6A6A;
+  --colour-button-disabled-text: #fff5eb;
+  --colour-avatar-background: #b8946d;
+  --colour-avatar-border: #412123;
+  --colour-skillbar-filled-one: #a6cf4a;
+  --colour-skillbar-filled-two: #6b8e24;
+  --colour-skillbar-empty-one: #2d1c00;
+  --colour-skillbar-empty-two: #5a3a12;
+}
+
+[data-theme='dark'] {
+  --colour-page-background: #060B16;
+  --colour-text: #F1F9FC;
+  --colour-section-background: #1a1f2e;
+  --colour-card-border: #142548;
+  --colour-card-background: #0B1427;
+  --colour-card-text: #e8e9ed;
+  --colour-accent-primary: #7b9fd4;
+  --colour-text-light: #f5f6fa;
+  --colour-tooltip-background: #141824;
+  --colour-tooltip-text: #c9d1e0;
+  --colour-toggle-top: #142649;
+  --colour-toggle-base: #0B1427;
+  --colour-button-border: #142548;
+  --colour-button-background-primary: #101D3A;
+  --colour-button-background-primary-hover: #1a2d52;
+  --colour-button-background-secondary: #131F30;
+  --colour-button-background-secondary-hover: #a2b8d1;
+  --colour-button-background-tertiary: #27436C;
+  --colour-button-background-tertiary-hover: #355787;
+  --colour-button-background-disabled: #1f242c;
+  --colour-button-border-disabled: #6A6A6A;
+  --colour-button-disabled-text: #a2a197;
+  --colour-avatar-background: #667FA5;
+  --colour-avatar-border: #486E9F;
+  --colour-skillbar-filled-one: #a6cf4a;
+  --colour-skillbar-filled-two: #6b8e24;
+  --colour-skillbar-empty-one: #142548;
+  --colour-skillbar-empty-two: #060B16;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: var(--colour-page-background);
+  color: var(--colour-text);
+  transition: background-color 0.6s ease;
+}
+
+* {
+  transition: color 0.4s ease, background-color 0.6s ease, border-color 0.4s ease;
+}
+
+h1, h2 {
+  font-family: "Press Start 2P", "VT323", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1;
+}

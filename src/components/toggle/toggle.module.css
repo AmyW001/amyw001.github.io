@@ -1,0 +1,66 @@
+.toggle input {
+  display: none;
+}
+
+.track {
+  width: 65px;
+  height: 35px;
+  background: linear-gradient(180deg, var(--colour-toggle-top), var(--colour-toggle-base));
+  border: 2px solid var(--colour-card-border);
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  image-rendering: pixelated;
+  box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 0px;
+}
+
+.thumb {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transition: transform 0.2s steps(4), background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px 4px rgba(238, 216, 77, 0.8);
+}
+
+.toggle input:checked + .track .thumb {
+  transform: translateX(26px);
+  background: #eed84d;
+  box-shadow: 0 0 12px 3px rgba(255, 255, 255, 0.949);
+}
+
+.iconOn,
+.iconOff {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 115%;
+  height: 115%;
+  transition: opacity 0.15s steps(2);
+}
+
+.iconOn img {
+  opacity: 0;
+}
+
+.iconOff img {
+  opacity: 1;
+}
+
+.toggle input:checked + .track .iconOn img {
+  opacity: 1;
+}
+
+.toggle input:checked + .track .iconOff img {
+  opacity: 0;
+}

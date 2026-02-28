@@ -1,0 +1,9 @@
+.card {
+    background-color: var(--colour-card-background);
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 0px;
+    border: 3px solid var(--colour-card-border);
+    padding: 16px;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
