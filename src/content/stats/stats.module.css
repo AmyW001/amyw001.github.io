@@ -168,7 +168,8 @@
 
   .professionalAbilities {
     .listContainer ul {
-      margin-left: 40px;
+      margin-left: 23px;
+      justify-content: center; 
     }
   }
 }

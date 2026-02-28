@@ -181,4 +181,8 @@
     font-size: 20px;
     margin-left: 160px;
   }
+
+  .headerContent {
+    margin-bottom: 0px;
+  }
 }
