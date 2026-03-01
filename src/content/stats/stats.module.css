@@ -168,8 +168,34 @@
 
   .professionalAbilities {
     .listContainer ul {
-      margin-left: 23px;
-      justify-content: center; 
+      margin-left: 0px;
+    }
+  }
+
+  .twoColumnTechnologies {
+    display: flex;
+    gap: 20px;
+
+    ul {
+      flex: 1;
+    }
+  }
+
+  .listContainer ul.leftColumn {
+    text-align: left;
+  }
+
+  .professionalAbilities .listContainer .rightColumn {
+    text-align: right;
+    justify-content: flex-end;
+
+    li {
+      justify-content: flex-end;
+
+      img {
+        margin-right: 0;
+        margin-left: 10px;
+      }
     }
   }
 }

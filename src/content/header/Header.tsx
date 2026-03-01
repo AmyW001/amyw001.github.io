@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Toggle } from "../../components";
-import { Avatar, AvatarTwo, AvatarThree } from "../../assets";
+import AvatarGIF from "./avatarGIF/AvatarGIF";
 import styles from "./header.module.css";
 
 type TypewriterProps = {
@@ -58,11 +58,7 @@ function Header() {
       <section className={styles.intro}>
         <Card>
           <div className={styles.speechBox}>
-            <div className={styles.avatarGif}>
-              <img src={Avatar} alt="Avatar" className={styles.avatar} />
-              <img src={AvatarTwo} alt="Avatar" className={styles.avatar} />
-              <img src={AvatarThree} alt="Avatar" className={styles.avatar} />
-            </div>
+            <AvatarGIF />
             <Typewriter text="Welcome to my portfolio!" />
           </div>
         </Card>

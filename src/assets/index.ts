@@ -37,3 +37,4 @@ export { default as Sass } from "./sass.svg";
 export { default as Star } from "./star.svg";
 export { default as Sun } from "./sun.svg";
 export { default as Tailwind } from "./tailwind.svg";
+export { default as Vitest } from "./vitest.svg";

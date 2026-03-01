@@ -78,6 +78,10 @@
 }
 
 @media (max-width: 900px) {
+  .about {
+    padding: 50px 40px 30px 40px;
+  }
+
   .aboutContentsContainer {
     flex-direction: column;
     gap: 60px;
@@ -88,7 +92,7 @@
 @media (max-width: 550px) {
   .aboutText {
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .buttonRow {
@@ -98,5 +102,24 @@
       font-size: 18px;
       padding: 6px 10px;
     }
+  }
+
+  .aboutContentsContainer {
+    align-items: stretch;
+  }
+
+  .playerCardColumn {
+    align-items: stretch;
+
+    .aboutRightContentsContainer {
+      width: 100%;
+    }
+    > * {
+      flex: 1;
+    }
+  }
+
+  .playerCardColumn {
+    min-width: 0;
   }
 }

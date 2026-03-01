@@ -1,0 +1,12 @@
+.avatar {
+  object-fit: contain;
+  max-width: 130px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 550px) {
+  .avatar {
+    max-width: 110px;
+  }
+}
