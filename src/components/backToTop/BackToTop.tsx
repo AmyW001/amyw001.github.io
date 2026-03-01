@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import { ArrowUp, ArrowUpBrown } from "../../assets";
+import { useTheme } from "../../ThemeContext";
 import styles from "./backToTop.module.css";
 
 function BackToTop() {
   const [visible, setVisible] = useState(false);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => {
@@ -22,8 +25,9 @@ function BackToTop() {
       className={`${styles.backToTop} ${visible ? styles.visible : ""}`}
       onClick={scrollUp}
       aria-label="Back to top"
+      aria-hidden={!visible}
     >
-      ↑
+      <img src={theme === 'light' ? ArrowUpBrown : ArrowUp} alt="Arrow pointing up" />
     </button>
   );
 }

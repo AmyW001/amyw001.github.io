@@ -1,3 +1,5 @@
+export { default as ArrowUp } from "./arrow.svg";
+export { default as ArrowUpBrown } from "./arrow-brown.svg";
 export { default as Avatar } from "./avatar.avif";
 export { default as AvatarTwo } from "./avatar-2.avif";
 export { default as AvatarThree } from "./avatar-3.avif";

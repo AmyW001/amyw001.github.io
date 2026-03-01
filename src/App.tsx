@@ -1,4 +1,5 @@
 import { About, Footer, Header, Projects, Stats } from './content'
+import { BackToTop } from './components'
 import './App.css'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <About />
     <Projects />
     <Footer />
-</>
+    <BackToTop />
+  </>
   );
 }
 
