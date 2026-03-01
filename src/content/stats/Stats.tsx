@@ -1,5 +1,5 @@
 import { Bar, Card, CardInner, SkillBar } from "../../components";
-import { Bouldering, CSS, Docker, Game, Hiking, Knitting, Piano, Javascript, Jest, Laravel, MySQL, Next, PHP, Plant, React, Sass, Tailwind, Vitest } from "../../assets";
+import { Bouldering, Docker, Game, Hiking, Knitting, Piano, Javascript, Jest, Laravel, MySQL, Next, PHP, Plant, React, Sass, Tailwind, Vitest, GitHubCopilot, Photography } from "../../assets";
 import PlayerCard from "./playerCard/PlayerCard";
 import useIsMobile from "../../hooks/useIsMobile";
 import styles from "./stats.module.css";
@@ -15,15 +15,15 @@ const technologies: Technology[] = [
   { id: 1, key: "javascript", label: "JavaScript", icon: Javascript },
   { id: 2, key: "react", label: "React", icon: React },
   { id: 3, key: "jest", label: "Jest", icon: Jest },
-  { id: 9, key: "vitest", label: "Vitest", icon: Vitest },
-  { id: 4, key: "php", label: "PHP", icon: PHP },
-  { id: 5, key: "laravel", label: "Laravel", icon: Laravel },
+  { id: 4, key: "vitest", label: "Vitest", icon: Vitest },
+  { id: 5, key: "php", label: "PHP", icon: PHP },
+  { id: 6, key: "laravel", label: "Laravel", icon: Laravel },
   { id: 7, key: "sass", label: "Sass", icon: Sass },
-  { id: 6, key: "css", label: "CSS", icon: CSS },
   { id: 8, key: "mysql", label: "MySQL", icon: MySQL },
-  { id: 10, key: "tailwind", label: "Tailwind", icon: Tailwind },
-  { id: 11, key: "docker", label: "Docker", icon: Docker },
-  { id: 12, key: "next", label: "Next.js", icon: Next },
+  { id: 9, key: "tailwind", label: "Tailwind", icon: Tailwind },
+  { id: 10, key: "docker", label: "Docker", icon: Docker },
+  { id: 11, key: "next", label: "Next.js", icon: Next },
+  { id: 12, key: "githubCopilot", label: "GitHub Copilot", icon: GitHubCopilot },
 ];
 
 function Stats() {
@@ -85,7 +85,8 @@ function Stats() {
                   <SkillBar iconSrc={Bouldering} iconAlt="Bouldering" tooltip="Bouldering" value={3} />
                   {/* <SkillBar iconSrc={Book} iconAlt="Reading" tooltip="Reading" value={9} /> */}
                   {/* <SkillBar iconSrc={Gym} iconAlt="Gym" tooltip="Gym" value={2} /> */}
-                  <SkillBar iconSrc={Piano} iconAlt="Piano" tooltip="Piano" value={8} />
+                  {/* <SkillBar iconSrc={Piano} iconAlt="Piano" tooltip="Piano" value={8} /> */}
+                  <SkillBar iconSrc={Photography} iconAlt="Photography" tooltip="Photography" value={8} />
                   <SkillBar iconSrc={Plant} iconAlt="Plant care" tooltip="Plant care" value={6} />
                   <SkillBar iconSrc={Game} iconAlt="Gaming" tooltip="Gaming" value={4} />
                 </div>
