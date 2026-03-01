@@ -15,10 +15,10 @@ function About() {
             <Card>
               <CardInner>
                 <p className={styles.aboutText}>
-                  I'm a fullstack web developer interested in building scalable, easy-to-read code, with experience bridging multi-stack teams post-merger. I
-                  have a passion for problem solving, and love using the creativity and communication skills learned from my previous career as a freelance,
+                  I'm a fullstack web developer interested in building scalable, easy-to-read code, with experience bridging multi-stack teams post-company-merger. 
+                  With a keen eye for detail and deep understanding of user experience, I love using the creativity and communication skills learned from my previous career as a freelance,
                   classical musician for problem solving and collaborative work in a development environment. I enjoy constantly expanding my technical
-                  knowledge and I'm currently interested in deepening and extending my knowledge of backend Javascript development.
+                  knowledge and I'm currently interested in deepening and extending my knowledge of backend JavaScript development.
                 </p>
               </CardInner>
             </Card>
@@ -34,7 +34,7 @@ function About() {
           colorVariant="primary"
         />
         <LinkButton
-          href="https://github.com/amywelch"
+          href="https://github.com/amyw001"
           buttonText="GitHub"
           icon={GitHub}
           iconAlt="GitHub"

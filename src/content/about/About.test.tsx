@@ -22,7 +22,7 @@ describe('About', () => {
   it('renders GitHub button', () => {
     render(<About />);
     const githubButton = screen.getByText('GitHub').closest('a');
-    expect(githubButton).toHaveAttribute('href', 'https://github.com/amywelch');
+    expect(githubButton).toHaveAttribute('href', 'https://github.com/amyw001');
   });
 
   it('renders Email button', () => {

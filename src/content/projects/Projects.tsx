@@ -56,7 +56,11 @@ function Projects() {
                   <p>{project.description}</p>
                 </section>
                 <div className={styles.linksContainer}>
-                  <LinkButton buttonText="View Code" colorVariant="primary" href={project.codeButtonLink} />
+                  {project.codeButtonLink ? (
+                    <LinkButton buttonText="View Code" colorVariant="primary" href={project.codeButtonLink} />
+                  ) : (
+                    <LinkButton buttonText="View Code" colorVariant="primary" href="#" disabled />
+                  )}
                   {project.demoButtonLink ? (
                     <LinkButton buttonText="View Demo" colorVariant="secondary" href={project.demoButtonLink} />
                   ) : (

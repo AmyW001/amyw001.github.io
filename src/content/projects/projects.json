@@ -6,7 +6,7 @@
     "image": "ComingSoon",
     "imageAlt": "Project 1",
     "tags": ["NextJS", "Prisma"],
-    "codeButtonLink": "https://github.com/AmyW001/laravel-job-board-project",
+    "codeButtonLink": "",
     "demoButtonLink": ""
   },
   {
@@ -51,11 +51,11 @@
   },
   {
     "id": "6",
-    "title": "Javascript Game",
-    "description": "A space-invaders inspired game running on Javascript.",
+    "title": "JavaScript Game",
+    "description": "A space-invaders inspired game running on JavaScript.",
     "image": "FlyVaders",
     "imageAlt": "Project 6",
-    "tags": ["Javascript", "HTML", "CSS"],
+    "tags": ["JavaScript", "HTML", "CSS"],
     "codeButtonLink": "https://github.com/AmyW001/fly-vaders",
     "demoButtonLink": "https://amyw001.github.io/fly-vaders/"
   }

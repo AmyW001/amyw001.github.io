@@ -12,7 +12,7 @@ type Technology = {
 };
 
 const technologies: Technology[] = [
-  { id: 1, key: "javascript", label: "Javascript", icon: Javascript },
+  { id: 1, key: "javascript", label: "JavaScript", icon: Javascript },
   { id: 2, key: "react", label: "React", icon: React },
   { id: 3, key: "jest", label: "Jest", icon: Jest },
   { id: 9, key: "vitest", label: "Vitest", icon: Vitest },
