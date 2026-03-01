@@ -141,6 +141,12 @@
   }
 }
 
+@media (max-width: 900px) {
+  .intro p {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 550px) {
   .header {
     min-height: 650px;
@@ -162,7 +168,7 @@
 
   .intro p {
     font-size: 20px;
-    margin-left: 150px;
+    margin-left: 130px;
   }
 
   .headerContent {
