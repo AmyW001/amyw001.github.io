@@ -1,5 +1,5 @@
 import { Bar, Card, CardInner, SkillBar } from "../../components";
-import { Bouldering, Docker, Game, Hiking, Knitting, Piano, Javascript, Jest, Laravel, MySQL, Next, PHP, Plant, React, Sass, Tailwind, Vitest, GitHubCopilot, Photography } from "../../assets";
+import { Bouldering, Docker, Game, Hiking, Knitting, Javascript, Jest, Laravel, MySQL, Next, PHP, Plant, React, Sass, Tailwind, Vitest, GitHubCopilot, Photography } from "../../assets";
 import PlayerCard from "./playerCard/PlayerCard";
 import useIsMobile from "../../hooks/useIsMobile";
 import styles from "./stats.module.css";
