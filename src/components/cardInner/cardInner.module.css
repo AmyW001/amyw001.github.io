@@ -1,6 +1,6 @@
 .cardInner {
   border: 3px solid var(--colour-card-border);
-  padding: 25px 25px;
+  padding: 25px 20px;
   height: 100%;
   position: relative;
 }
@@ -34,6 +34,6 @@
 
 @media (max-width: 1030px) {
   .cardInner {
-    padding: 25px 25px;
+    padding: 25px 20px;
   }
 }

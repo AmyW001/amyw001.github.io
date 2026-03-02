@@ -6,7 +6,7 @@
     border: var(--colour-button-border) solid 2px;
     display: inline-flex;
     align-items: center;
-    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .primary {
@@ -16,6 +16,8 @@
 
   .primary:hover {
     background-color: var(--colour-button-background-primary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px;
   }
 
   .secondary {
@@ -25,15 +27,19 @@
 
   .secondary:hover {
     background-color: var(--colour-button-background-secondary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px;
   }
 
   .tertiary {
     background-color: var(--colour-button-background-tertiary);
     color: var(--colour-text-light);
   }
-
-   .tertiary:hover {
+  
+  .tertiary:hover {
     background-color: var(--colour-button-background-tertiary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px
   }
 
   .disabled {

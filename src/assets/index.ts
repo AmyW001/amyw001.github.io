@@ -10,6 +10,7 @@ export { default as ComingSoon } from "./coming-soon.jpg";
 export { default as CSS } from "./css.svg";
 export { default as Docker } from "./docker.svg";
 export { default as DogWalking } from "./dog-walking.png";
+export { default as Download } from "./download.png";
 export { default as Email } from "./email.svg";
 export { default as CareerCache } from "./career-cache.png";
 export { default as FlyVaders } from "./flyvaders.png";

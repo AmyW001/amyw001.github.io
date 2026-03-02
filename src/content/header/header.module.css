@@ -20,7 +20,7 @@
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .header::before {
@@ -41,11 +41,26 @@
   opacity: 1;
 }
 
-.toggleWrapper {
+.headerButtonsWrapper {
   position: absolute;
   top: 20px;
-  right: 40px;
+  width: 100%;
+  padding: 0 20px;
   z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.downloadCVButton {
+  text-decoration: none;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+
+  img {
+    width: 40px;
+  }
 }
 
 .headerContent {
@@ -72,8 +87,8 @@
   position: absolute;
   inset: 0;
   color: var(--colour-card-border);
-  text-shadow: 7px 5px 0 var(--colour-card-border);
-  transition: color 0.6s ease, text-shadow 0.6s ease;
+  text-shadow: 5px 3px 0 var(--colour-card-border);
+  transition: color 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), text-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 [data-theme='dark'] .titleShadow {
@@ -88,7 +103,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-text-stroke: 1px var(--colour-page-background);
-  transition: all 0.6s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 [data-theme='dark'] .titleFill {
@@ -118,6 +133,7 @@
   align-items: center;
   min-height: 30px;
 }
+
 .typewriterWrapper {
   position: relative;
 }
@@ -138,6 +154,21 @@
   }
   50%, 100% {
     opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header::before,
+  .header::after {
+    transition: opacity 0.1s linear;
+  }
+
+  .titleShadow {
+    transition: color 0.1s linear, text-shadow 0.1s linear;
+  }
+
+  .titleFill {
+    transition: all 0.1s linear;
   }
 }
 
@@ -173,5 +204,18 @@
 
   .headerContent {
     margin-bottom: 0px;
+  }
+
+  .header::before,
+  .header::after {
+    transition: opacity 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .titleShadow {
+    transition: color 0.15s cubic-bezier(0.4, 0.0, 0.2, 1), text-shadow 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .titleFill {
+    transition: all 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 }

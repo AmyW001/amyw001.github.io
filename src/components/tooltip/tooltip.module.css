@@ -1,0 +1,30 @@
+.tooltipTarget {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
+  padding: 4px 8px;
+  background: var(--colour-tooltip-background);
+  color: var(--colour-tooltip-text);
+  border: 2px solid var(--colour-card-border);
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  z-index: 2;
+}
+
+.tooltipTarget:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
+}

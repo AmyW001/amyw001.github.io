@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Card, Toggle } from "../../components";
+import { Card, Toggle, Tooltip } from "../../components";
 import AvatarGIF from "./avatarGIF/AvatarGIF";
+import { Download } from "../../assets";
 import styles from "./header.module.css";
 
 type TypewriterProps = {
@@ -42,7 +43,12 @@ function Typewriter({ text, speed = 55 }: TypewriterProps) {
 function Header() {
   return (
     <div className={styles.header}>
-      <div className={styles.toggleWrapper}>
+      <div className={styles.headerButtonsWrapper}>
+        <a href="/assets/Amy-CV.pdf" download="Amy-CV.pdf" className={styles.downloadCVButton}>
+          <Tooltip text="Download CV">
+            <img src={Download} alt="Download CV" />
+          </Tooltip>
+        </a>
         <Toggle />
       </div>
       <header className={styles.headerContent}>

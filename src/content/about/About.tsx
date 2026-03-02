@@ -27,7 +27,7 @@ function About() {
       </div>
       <div className={styles.buttonRow}>
         <LinkButton
-          href="https://www.linkedin.com/in/amy-welch-1a9b4b1b3/"
+          href="https://www.linkedin.com/in/amy-welch/"
           buttonText="LinkedIn"
           icon={LinkedIn}
           iconAlt="LinkedIn"

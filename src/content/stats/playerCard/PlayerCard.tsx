@@ -24,7 +24,7 @@ function PlayerCard() {
           <section className={styles.skills}>
             <h3>Skills</h3>
             <ul>
-              <li>
+              <li className={styles.attentionToDetail}>
                 <img src={Medal} alt="Medal" className={styles.medal} />
                 Meticulous attention to detail
               </li>

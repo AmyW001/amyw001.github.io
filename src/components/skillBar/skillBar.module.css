@@ -5,12 +5,6 @@
   gap: 12px;
 }
 
-.tooltipTarget {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
 .label {
   font-size: 18px;
 }
@@ -18,31 +12,6 @@
 .icon {
   width: 26px;
   height: 26px;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 6px;
-  padding: 4px 8px;
-  background: var(--colour-tooltip-background);
-  color: var(--colour-tooltip-text);
-  border: 2px solid var(--colour-card-border);
-  border-radius: 4px;
-  white-space: nowrap;
-  font-size: 12px;
-  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
-  z-index: 2;
-}
-
-.tooltipTarget:hover .tooltip {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-2px);
 }
 
 .bar {
@@ -71,5 +40,27 @@
 @media (max-width: 1280px) {
   .skillBarWrapper {
     gap: 5px;
+  }
+}
+
+.segment {
+  width: 15px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid var(--colour-card-border);
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 0px;
+  background: linear-gradient(180deg, var(--colour-skillbar-empty-one), var(--colour-skillbar-empty-two));
+}
+
+.animate .segmentFilled {
+  animation: fillSegment 0.2s forwards;
+}
+
+@keyframes fillSegment {
+  0% {
+    background: linear-gradient(180deg, var(--colour-skillbar-empty-one), var(--colour-skillbar-empty-two));
+  }
+  100% {
+    background: linear-gradient(180deg, var(--colour-skillbar-filled-one), var(--colour-skillbar-filled-two));
   }
 }
