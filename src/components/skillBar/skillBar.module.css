@@ -37,12 +37,6 @@
   background: linear-gradient(180deg, var(--colour-skillbar-empty-one), var(--colour-skillbar-empty-two));
 }
 
-@media (max-width: 1280px) {
-  .skillBarWrapper {
-    gap: 5px;
-  }
-}
-
 .segment {
   width: 15px;
   height: 22px;
@@ -70,5 +64,11 @@
   }
   100% {
     background-position: 0% 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .skillBarWrapper {
+    gap: 5px;
   }
 }

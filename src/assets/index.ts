@@ -3,6 +3,7 @@ export { default as ArrowUpBrown } from "./arrow-brown.svg";
 export { default as Avatar } from "./avatar.avif";
 export { default as AvatarTwo } from "./avatar-2.avif";
 export { default as AvatarThree } from "./avatar-3.avif";
+export { default as BirdSprite } from "./bird-sprite.png";
 export { default as Book } from "./book.svg";
 export { default as BookClub } from "./book-club.jpeg";
 export { default as Bouldering } from "./bouldering.png";

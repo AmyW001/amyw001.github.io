@@ -1,4 +1,5 @@
 export { default as Bar } from './bar/Bar'
+export { default as Birds } from './birds/Birds'
 export { default as Card } from './card/Card'
 export { default as CardInner } from './cardInner/CardInner'
 export { default as LinkButton } from './linkButton/LinkButton'

@@ -8,6 +8,7 @@
   justify-content: flex-start;
   gap: 120px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header::before,
@@ -141,6 +142,8 @@
   }
 
   .headerContent {
+    margin-bottom: 0px;
+
     h1 {
       font-size: 60px;
     }
@@ -157,9 +160,5 @@
   .intro p {
     font-size: 20px;
     margin-left: 130px;
-  }
-
-  .headerContent {
-    margin-bottom: 0px;
   }
 }

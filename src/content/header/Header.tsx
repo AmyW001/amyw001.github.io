@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Toggle, Tooltip } from "../../components";
+import { Birds, Card, Toggle, Tooltip } from "../../components";
 import AvatarGIF from "./avatarGIF/AvatarGIF";
 import { Download } from "../../assets";
 import styles from "./header.module.css";
@@ -43,6 +43,7 @@ function Typewriter({ text, speed = 55 }: TypewriterProps) {
 function Header() {
   return (
     <div className={styles.header}>
+      <Birds />
       <div className={styles.headerButtonsWrapper}>
         <a href="/assets/Amy-CV.pdf" download="Amy-CV.pdf" className={styles.downloadCVButton}>
           <Tooltip text="Download CV">
