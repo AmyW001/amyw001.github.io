@@ -23,7 +23,7 @@ const technologies: Technology[] = [
   { id: 9, key: "tailwind", label: "Tailwind", icon: Tailwind },
   { id: 10, key: "docker", label: "Docker", icon: Docker },
   { id: 11, key: "next", label: "Next.js", icon: Next },
-  { id: 12, key: "githubCopilot", label: "GitHub Copilot", icon: GitHubCopilot },
+  { id: 12, key: "githubCopilot", label: "Copilot", icon: GitHubCopilot },
 ];
 
 function Stats() {

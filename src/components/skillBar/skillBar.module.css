@@ -53,14 +53,22 @@
 }
 
 .animate .segmentFilled {
+  background: linear-gradient(90deg, 
+    var(--colour-skillbar-filled-one) 0%,
+    var(--colour-skillbar-filled-two) 50%,
+    var(--colour-skillbar-empty-one) 50%,
+    var(--colour-skillbar-empty-two) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
   animation: fillSegment 0.2s forwards;
 }
 
 @keyframes fillSegment {
   0% {
-    background: linear-gradient(180deg, var(--colour-skillbar-empty-one), var(--colour-skillbar-empty-two));
+    background-position: 100% 0;
   }
   100% {
-    background: linear-gradient(180deg, var(--colour-skillbar-filled-one), var(--colour-skillbar-filled-two));
+    background-position: 0% 0;
   }
 }

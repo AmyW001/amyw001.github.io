@@ -61,7 +61,7 @@ function SkillBar({ label, iconSrc, iconAlt, tooltip, value, max = 9 }: SkillBar
             key={index}
             className={`${styles.segment} ${filled ? styles.segmentFilled : ""}`}
             style={{
-              animationDelay: filled ? `${index * 0.08}s` : undefined,
+              animationDelay: filled ? `${index * 0.2}s` : undefined,
             }}
           />
         ))}
