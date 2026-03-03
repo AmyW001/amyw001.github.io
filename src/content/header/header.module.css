@@ -1,44 +1,18 @@
 .header {
   min-height: 750px;
   padding: 90px 50px;
-  background-color: var(--colour-page-background);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 120px;
-  -webkit-mask-image: linear-gradient(to bottom, var(--colour-section-background) 70%, transparent 100%);
-  mask-image: linear-gradient(to bottom, var(--colour-section-background) 70%, transparent 100%);
   position: relative;
 }
 
 .header::before,
 .header::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-.header::before {
-  background-image: url('../../assets/mountain-pixel-scene.avif');
-  opacity: 1;
-}
-
-.header::after {
-  background-image: url('../../assets/mountain-scene-night.avif');
-  opacity: 0;
-}
-
-[data-theme='dark'] .header::before {
-  opacity: 0;
-}
-
-[data-theme='dark'] .header::after {
-  opacity: 1;
+  display: none;
 }
 
 .headerButtonsWrapper {
@@ -88,7 +62,6 @@
   inset: 0;
   color: var(--colour-card-border);
   text-shadow: 5px 3px 0 var(--colour-card-border);
-  transition: color 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), text-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 [data-theme='dark'] .titleShadow {
@@ -103,7 +76,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-text-stroke: 1px var(--colour-page-background);
-  transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 [data-theme='dark'] .titleFill {
@@ -157,21 +129,6 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .header::before,
-  .header::after {
-    transition: opacity 0.1s linear;
-  }
-
-  .titleShadow {
-    transition: color 0.1s linear, text-shadow 0.1s linear;
-  }
-
-  .titleFill {
-    transition: all 0.1s linear;
-  }
-}
-
 @media (max-width: 900px) {
   .intro p {
     font-size: 25px;
@@ -204,18 +161,5 @@
 
   .headerContent {
     margin-bottom: 0px;
-  }
-
-  .header::before,
-  .header::after {
-    transition: opacity 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
-  }
-
-  .titleShadow {
-    transition: color 0.15s cubic-bezier(0.4, 0.0, 0.2, 1), text-shadow 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
-  }
-
-  .titleFill {
-    transition: all 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
 }

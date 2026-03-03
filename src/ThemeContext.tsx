@@ -18,7 +18,15 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    const root = document.documentElement;
+
+    root.classList.add("theme-transition");
+
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    
+    window.setTimeout(() => {
+      root.classList.remove("theme-transition");
+    }, 500);
   };
 
   return (
