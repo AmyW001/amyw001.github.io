@@ -1,4 +1,4 @@
-import styles from "./Sparkle.module.css";
+import styles from "./sparkle.module.css";
 
 const Sparkle = ({ top = 0, left = 0 }) => {
   const randomDelay = Math.random() * 1;
