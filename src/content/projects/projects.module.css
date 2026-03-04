@@ -12,7 +12,7 @@
 
   h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--colour-text-light);
   }
 }
@@ -20,16 +20,14 @@
  .projectCardsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 30px;
+  gap: 60px 50px;
   align-items: stretch;
-  max-width: 1200px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .cardItem {
   display: flex;
-  flex: 1 1 300px;
-  max-width: 340px;
+  flex: 1 1 325px;
 
   .projectContents {
     display: flex;
@@ -85,14 +83,26 @@
 
 @media (max-width: 900px) {
   .cardItem {
-    flex: 1 1 260px;
-    max-width: 320px;
+    flex: 1 1 325px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardItem {
+    flex: 1 1 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardItem {
+    flex: 1;
   }
 }
 
 @media (max-width: 700px) {
   .projectCardsContainer {
     gap: 30px 20px;
+    justify-content: center;
   }
 
   .cardItem {

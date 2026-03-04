@@ -16,7 +16,7 @@
   display: none;
 }
 
-.headerButtonsWrapper {
+.toggleWrapper {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -24,17 +24,7 @@
   z-index: 10;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.downloadCVButton {
-  box-shadow: none;
-  padding: 0;
-  border: none;
-
-  img {
-    width: 40px;
-  }
+  justify-content: flex-end;
 }
 
 .headerContent {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Birds, Card, Toggle, Tooltip } from "../../components";
+import { Birds, Card, Toggle } from "../../components";
 import AvatarGIF from "./avatarGIF/AvatarGIF";
-import { Download } from "../../assets";
+import { useTheme } from "../../ThemeContext";
 import styles from "./header.module.css";
 
 type TypewriterProps = {
@@ -41,15 +41,12 @@ function Typewriter({ text, speed = 55 }: TypewriterProps) {
 }
 
 function Header() {
+  const { theme } = useTheme();
+  
   return (
     <div className={styles.header}>
-      <Birds />
-      <div className={styles.headerButtonsWrapper}>
-        <a href="/assets/Amy-CV.pdf" download="Amy-CV.pdf" className={styles.downloadCVButton}>
-          <Tooltip text="Download CV">
-            <img src={Download} alt="Download CV" />
-          </Tooltip>
-        </a>
+      {theme === "light" && <Birds />}
+      <div className={styles.toggleWrapper}>
         <Toggle />
       </div>
       <header className={styles.headerContent}>

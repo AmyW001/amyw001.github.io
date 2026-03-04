@@ -1,0 +1,23 @@
+.sparkle {
+  position: absolute;
+  opacity: 0;
+  animation: sparkle 1.4s infinite;
+  background-color: var(--colour-text);
+  width: 2px;
+  height: 2px;
+    box-shadow:
+    0 0 4px var(--colour-text),
+    0 0 8px var(--colour-text),
+    0 0 14px var(--colour-text);
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.95) rotate(45deg);
+  }
+}

@@ -37,6 +37,9 @@
   --colour-skillbar-filled-two: #6b8e24;
   --colour-skillbar-empty-one: #2d1c00;
   --colour-skillbar-empty-two: #5a3a12;
+  --input-background-colour: #d5ad81;
+  --input-border-highlight-colour: #5A1D0F;
+  --background-image-aspect: 1.7777778;
 }
 
 [data-theme='dark'] {
@@ -68,6 +71,8 @@
   --colour-skillbar-filled-two: #6b8e24;
   --colour-skillbar-empty-one: #142548;
   --colour-skillbar-empty-two: #060B16;
+  --input-background-colour: #142548;
+  --input-border-highlight-colour: #060B16;
 }
 
 html {
@@ -87,6 +92,11 @@ body {
   position: relative;
   transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4,0,0.2,1);
   overflow-x: hidden;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
 }
 
 body::before,
@@ -141,4 +151,9 @@ h4 { font-size: 24px; line-height: 1; }
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }

@@ -1,0 +1,84 @@
+  button.buttonComponent {
+    color: var(--colour-text-light);
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0px;
+    border: var(--colour-button-border) solid 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.25rem;
+  }
+
+  .primary {
+    background-color: var(--colour-button-background-primary);
+    color: var(--colour-text-light);
+  }
+
+  .primary:hover {
+    background-color: var(--colour-button-background-primary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px;
+  }
+
+  .primary:active {
+    transform: translateY(0) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0px;
+  }
+
+  .secondary {
+    background-color: var(--colour-button-background-secondary);
+    color: var(--colour-text-light);
+  }
+
+  .secondary:hover {
+    background-color: var(--colour-button-background-secondary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px;
+  }
+
+  .secondary:active {
+    transform: translateY(0) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0px;
+  }
+
+  .tertiary {
+    background-color: var(--colour-button-background-tertiary);
+    color: var(--colour-text-light);
+  }
+  
+  .tertiary:hover {
+    background-color: var(--colour-button-background-tertiary-hover);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 8px 12px
+  }
+
+  .tertiary:active {
+    transform: translateY(0) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0px;
+  }
+
+  .disabled,
+  .disabled:hover,
+  .disabled:active {
+    background-color: var(--colour-button-background-disabled);
+    color: var(--colour-button-disabled-text);
+    border-color: var(--colour-button-border-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: translateY(0) scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 0px;
+  }
+
+  .icon {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+@media (max-width: 700px) {
+  button.buttonComponent {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+   
+}
