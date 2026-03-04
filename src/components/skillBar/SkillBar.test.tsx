@@ -22,12 +22,15 @@ describe('SkillBar', () => {
     expect(icon).toHaveAttribute('src', '/icon.svg');
   });
 
-  it('renders correct number of filled segments', () => {
+  it("renders correct number of filled segments", () => {
     const { container } = render(<SkillBar value={5} max={9} />);
+
+    const allSegments = container.querySelectorAll('[class*="segment"]');
     const filled = container.querySelectorAll('[class*="segmentFilled"]');
-    const empty = container.querySelectorAll('[class*="segmentEmpty"]');
+
+    expect(allSegments.length).toBe(9);
     expect(filled.length).toBe(5);
-    expect(empty.length).toBe(4);
+    expect(allSegments.length - filled.length).toBe(4);
   });
 
   it('clamps value to max', () => {

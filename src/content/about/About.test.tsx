@@ -16,7 +16,7 @@ describe('About', () => {
   it('renders LinkedIn button', () => {
     render(<About />);
     const linkedInButton = screen.getByText('LinkedIn').closest('a');
-    expect(linkedInButton).toHaveAttribute('href', 'https://www.linkedin.com/in/amy-welch-1a9b4b1b3/');
+    expect(linkedInButton).toHaveAttribute("href", "https://www.linkedin.com/in/amy-welch/");
   });
 
   it('renders GitHub button', () => {

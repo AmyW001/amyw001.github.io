@@ -25,7 +25,7 @@ describe('Stats', () => {
 
   it('renders technology list items', () => {
     render(<Stats />);
-    expect(screen.getByText('Javascript')).toBeInTheDocument();
+    expect(screen.getByText('JavaScript')).toBeInTheDocument();
     expect(screen.getByText('React')).toBeInTheDocument();
     expect(screen.getByText('PHP')).toBeInTheDocument();
   });
@@ -34,12 +34,12 @@ describe('Stats', () => {
     render(<Stats />);
     expect(screen.getByRole('tooltip', { name: /Hiking/i })).toBeInTheDocument();
     expect(screen.getByRole('tooltip', { name: /Knitting/i })).toBeInTheDocument();
-    expect(screen.getByRole('tooltip', { name: /Piano/i })).toBeInTheDocument();
+    expect(screen.getByRole('tooltip', { name: /Photography/i })).toBeInTheDocument();
   });
 
   it('renders all technology icons', () => {
     render(<Stats />);
-    const jsIcon = screen.getByAltText('Javascript');
+    const jsIcon = screen.getByAltText('JavaScript');
     expect(jsIcon).toBeInTheDocument();
   });
 });

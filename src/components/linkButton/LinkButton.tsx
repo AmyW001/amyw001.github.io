@@ -3,7 +3,7 @@ import styles from "./linkButton.module.css";
 type LinkButtonProps = {
   buttonText: string;
   colorVariant?: string;
-  href: string;
+  href?: string;
   disabled?: boolean;
   icon?: string;
   iconAlt?: string;

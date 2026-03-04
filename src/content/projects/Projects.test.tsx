@@ -10,7 +10,6 @@ describe('Projects', () => {
 
   it('renders project cards', () => {
     render(<Projects />);
-    // Check for a known project title from projects.json
     expect(screen.getByText(/Laravel Project - Jobs Board/i)).toBeInTheDocument();
   });
 
@@ -28,7 +27,6 @@ describe('Projects', () => {
 
   it('renders project tags', () => {
     render(<Projects />);
-    // Check for tags that should exist in projects.json
     const laravelTags = screen.getAllByText('Laravel');
     expect(laravelTags.length).toBeGreaterThan(0);
     const reactTags = screen.getAllByText('React');
@@ -46,11 +44,15 @@ describe('Projects', () => {
     expect(screen.getByText(/full-stack CRUD application/i)).toBeInTheDocument();
   });
 
-  it('renders links with correct href attributes', () => {
+  it("renders enabled View Code links with correct href", () => {
     render(<Projects />);
-    const codeButtons = screen.getAllByText('View Code');
-    const firstLink = codeButtons[0].closest('a');
-    expect(firstLink).toHaveAttribute('href');
-    expect(firstLink?.getAttribute('href')).toContain('github.com');
+
+    const links = screen.getAllByRole("link", { name: /view code/i });
+
+    expect(links.length).toBeGreaterThan(0);
+
+    links.forEach((link) => {
+      expect(link).toHaveAttribute("href", expect.stringContaining("github.com"));
+    });
   });
 });

@@ -59,12 +59,12 @@ function Projects() {
                   {project.codeButtonLink ? (
                     <LinkButton buttonText="View Code" colorVariant="primary" href={project.codeButtonLink} />
                   ) : (
-                    <LinkButton buttonText="View Code" colorVariant="primary" href="#" disabled />
+                    <LinkButton buttonText="View Code" colorVariant="primary" disabled />
                   )}
                   {project.demoButtonLink ? (
                     <LinkButton buttonText="View Demo" colorVariant="secondary" href={project.demoButtonLink} />
                   ) : (
-                    <LinkButton buttonText="View Demo" colorVariant="secondary" href="#" disabled />
+                    <LinkButton buttonText="View Demo" colorVariant="secondary" disabled />
                   )}
                 </div>
               </div>
