@@ -21,7 +21,7 @@ describe('Contact', () => {
       await user.click(downloadButton);
       
       expect(mockWindowOpen).toHaveBeenCalledTimes(1);
-      expect(mockWindowOpen).toHaveBeenCalledWith('/public/assets/Amy-CV.pdf', '_blank');
+      expect(mockWindowOpen).toHaveBeenCalledWith('/assets/Amy-CV.pdf', '_blank');
     }
   });
 

@@ -1,5 +1,5 @@
 import { Button, Card, CardInner } from "../../components";
-import { AvatarLaptop, ContactPic } from "../../assets";
+import { ContactPic } from "../../assets";
 import styles from "./contact.module.css";
 import ContactForm from "./ContactForm";
 
