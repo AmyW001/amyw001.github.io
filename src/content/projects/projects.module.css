@@ -93,12 +93,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .cardItem {
-    flex: 1;
-  }
-}
-
 @media (max-width: 700px) {
   .projectCardsContainer {
     gap: 30px 20px;

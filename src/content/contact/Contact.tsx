@@ -1,5 +1,5 @@
 import { Button, Card, CardInner } from "../../components";
-import { AvatarLaptop } from "../../assets";
+import { AvatarLaptop, ContactPic } from "../../assets";
 import styles from "./contact.module.css";
 import ContactForm from "./ContactForm";
 
@@ -11,7 +11,7 @@ export default function Contact() {
           <CardInner>
             <div className={styles.cvDownload}>
               <div className={styles.avatarContainer}>
-                <img src={AvatarLaptop} alt="Avatar" className={styles.avatar} />
+                <img src={ContactPic} alt="Avatar" className={styles.avatar} />
               </div>
               <Button buttonText="Download CV" buttonType="button" colorVariant="tertiary" onClick={() => window.open("/assets/Amy-CV.pdf", "_blank")} />
             </div>
