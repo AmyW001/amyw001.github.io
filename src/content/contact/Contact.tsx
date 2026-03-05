@@ -13,7 +13,7 @@ export default function Contact() {
               <div className={styles.avatarContainer}>
                 <img src={AvatarLaptop} alt="Avatar" className={styles.avatar} />
               </div>
-              <Button buttonText="Download CV" buttonType="button" colorVariant="tertiary" onClick={() => window.open("/public/assets/Amy-CV.pdf", "_blank")} />
+              <Button buttonText="Download CV" buttonType="button" colorVariant="tertiary" onClick={() => window.open("/assets/Amy-CV.pdf", "_blank")} />
             </div>
           </CardInner>
         </Card>
